@@ -1,0 +1,63 @@
+@use 'variables'
+
+@mixin btn
+    width: 11vw
+    height: 2.6vw   
+    border-radius: variables.$button-border-radius
+    background-color: transparent
+    color: variables.$secondary-text-color
+    font-size: 1vw
+    font-weight: bold
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 0.1em
+    border: solid 1px #fff
+    transition: 0.5
+    &:hover
+        cursor: pointer
+        color: variables.$primary-text-color
+        background-color: #fff
+    
+@mixin travel
+    background-size: cover
+    background-position: center
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 24.80vw
+    height: 19.72vw
+        
+@mixin btnTravel
+    width: 15vw
+    height: 5vh
+    border: solid 1px #fff
+    border-radius: 1.5vw
+    color: #fff
+    letter-spacing: 3px
+    font-size: 0.97vw
+    text-transform: uppercase
+    cursor: pointer
+    transition: 0.3s
+    background-color: rgba(18, 29, 18, 0.6)
+    &:hover 
+        background-color: #121d12d9
+
+@mixin cardexp
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 1.71vw
+    width: 13.6vw
+    height: 30vh
+    padding: 0 auto
+    margin-bottom: 4rem
+    // img
+    //     margin: 0 auto
+
+@mixin pcardexp
+    max-width: 80%
+    font-family: variables.$font-stack
+    font-weight: 700
+    font-size: 1.36vw
+    text-align: center

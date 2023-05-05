@@ -1,0 +1,64 @@
+@use '../variables'
+
+#contact
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 1.17vw
+    height: 37.59vw
+    margin-top: 5.66vw
+    background-color: variables.$primary-text-color
+
+.contact-title
+    font-family: variables.$font-stack
+    font-weight: 700
+    font-size: 3.41vw
+    color: #fff
+
+.contact-form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 0.68vw
+
+.contact-form-input
+    width: 32.61vw
+    height: 3.02vw
+    padding: 0.97vw 1.36vw
+    border: solid 2px variables.$primary-text-color
+    border-radius: variables.$input-contact-border-radius
+    font-family: variables.$font-stack
+    font-weight: 300
+    font-size: 1vw
+
+.contact-form-textarea
+    width: 32.61vw
+    height: 6.64vw
+    padding: 0.97vw 1.36vw
+    resize: none
+    border: solid 2px variables.$primary-text-color
+    border-radius: variables.$input-contact-border-radius
+    font-family: variables.$font-stack
+    font-weight: 300
+    font-size: 1vw
+
+button.btn
+    width: 9.17vw
+    height: 2.83vw
+    margin-top: 0.48vw
+    border: solid 1px #fff
+    border-radius: 1.4vw
+    letter-spacing: 3px
+    font-size: 1vw
+    text-transform: uppercase
+    color: variables.$secondary-text-color
+    cursor: pointer
+    transition: 0.3s ease
+    background-color: transparent
+
+    &:hover 
+        color: variables.$primary-text-color
+        background-color: variables.$secondary-text-color
+    

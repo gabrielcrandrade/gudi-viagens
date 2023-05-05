@@ -1,0 +1,56 @@
+@use "../variables"
+
+#main-content 
+  background-image: url(../src/assets/img/perua_d.png)
+  background-position: center bottom
+  background-repeat: no-repeat
+  background-size: 100%
+  width: 100%
+  padding: 2rem
+  display: flex
+  justify-content: flex-start
+  flex-direction: column
+
+  .container
+    display: flex
+    flex-direction: column
+    width: 40%
+    margin: 10rem 4rem
+    gap: 1rem
+
+    h1 
+        width: 30rem
+        font-size: 3rem
+        font-weight: 700
+        margin-bottom: 1rem
+        color: variables.$primary-text-color
+    
+
+    input 
+        padding: 0 2rem
+        width: 20vw
+        height: 4vh
+        font-size: 1rem
+        border: none
+        border-radius: variables.$input-main-border-radius
+        margin-right: 1rem
+    
+
+    button 
+        width: 8vw
+        height: 4vh
+        padding: 0.6rem 0
+        background-color: variables.$primary-text-color
+        color: variables.$secondary-text-color
+        border-radius: variables.$button-border-radius
+        font-size: 1rem
+        font-weight: bold
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        border: none
+        cursor: pointer
+        transition: background-color 0.2s ease-in-out
+        &:hover 
+            background-color: #007FFF
+    
+  

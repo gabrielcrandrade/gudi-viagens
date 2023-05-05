@@ -1,0 +1,77 @@
+@use '../variables'
+@use '../mixins'
+    
+#benefits
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .sub-title
+        font-family: variables.$font-stack
+        font-weight: 500
+        font-size: 1.5rem
+        color: #8B8B8B
+        padding-top: 7.61vw
+
+    .title-content
+        max-width: 25.97vw
+        font-family: variables.$font-stack
+        font-weight: 700
+        font-size: 3.5rem
+        text-align: center
+        color: #8B8B8B
+        padding-bottom: 4.29vw
+
+    .content-container
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        gap: 1.17vw
+        width: 70vw
+        padding-bottom: 4.68vw
+
+        img
+            width: 19.33vw
+            height: 19.23vw
+
+    .card-container
+        display: flex
+        gap: 1.95vw
+        .card-box-gray1
+            @include mixins.cardexp
+            background-color: #EEEEEE
+            img
+                width: 6rem
+            p
+                @include mixins.pcardexp
+                color: #005BD5  
+
+        .card-box-blue1
+            @include mixins.cardexp
+            background-color: #005BD5
+            img
+                width: 6rem
+            p
+                @include mixins.pcardexp
+                color:  #EEEEEE
+
+        .card-box-gray2
+            @include mixins.cardexp
+            background-color: #EEEEEE
+            img
+                width: 6rem
+            p
+                @include mixins.pcardexp
+                color: #005BD5 
+
+        .card-box-blue2
+            @include mixins.cardexp
+            background-color: #005BD5
+            img
+                width: 6rem
+            p
+                @include mixins.pcardexp
+                color:  #EEEEEE

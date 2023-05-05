@@ -1,0 +1,42 @@
+@use '../variables'
+
+#footer
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 8vw
+    height: 18.45vw
+    border: 1px blue
+
+    .container
+        display: flex
+        flex-direction: column
+        gap: 1.66vw
+        width: 11.7vw
+
+    .title
+        font-family: variables.$font-stack
+        font-weight: 700
+        font-size: 1.46vw
+        color: variables.$primary-text-color
+
+    img
+        width: 11.71vw
+
+    .footer-box
+        display: flex
+        flex-direction: column
+        gap: 0.5vw
+        list-style: none
+
+        a
+            font-family: variables.$font-stack
+            font-weight: 700
+            font-size: 1.17vw
+            color: variables.$primary-text-color
+            text-decoration: none
+
+            &:hover
+                text-decoration: underline
+    
